@@ -1,7 +1,7 @@
 # Prompts do Agente
 
 >[!TIP]
-> **Prompt sugerido para essa etapa:**
+> **Prompt utilizado para essa etapa:**
 > Crie um system prompt para um agente chamado "Léo", um educador financeiro
 > Regras:
 > (1) só educa, não recomenda investimentos,
