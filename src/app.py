@@ -4,6 +4,7 @@ import requests
 import streamlit as st
 
 # ======== CONFIGURAÇÃO ========
+# Adicionada a porta padrão do Ollama (11434)
 OLLAMA_URL = 'http://localhost:11434/api/generate'
 MODELO = 'gpt-oss'
 
@@ -15,6 +16,7 @@ historico = pd.read_csv('./data/historico_atendimento.csv')
 produtos = json.load(open('./data/produtos_financeiros.json'))
 
 # ======== MONTAR CONTEXTO ========
+# Substituídas as crases por aspas triplas (""") e corrigidas as chamadas de método
 contexto = f"""
 CLIENTE: {perfil['nome']}, {perfil['idade']} anos, perfil {perfil['perfil_investidor']}
 OBJETIVO: {perfil['objetivo_principal']}
@@ -57,6 +59,7 @@ def perguntar(msg):
 
     Pergunta: {msg}"""
 
+    # Corrigida a estrutura do JSON enviado via POST
     payload = {"model": MODELO, "prompt": prompt, "stream": False}
 
     r = requests.post(OLLAMA_URL, json=payload)
@@ -69,4 +72,5 @@ st.title("Léo, seu educador financeiro")
 if pergunta := st.chat_input("Sua dúvida sobre finanças..."):
     st.chat_message("user").write(pergunta)
     with st.spinner("..."):
+        # Corrigida a chamada da função para usar parênteses
         st.chat_message("assistant").write(perguntar(pergunta))
