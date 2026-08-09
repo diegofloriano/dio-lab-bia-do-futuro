@@ -28,3 +28,7 @@ ollama serve
 # Rodar o app
 streamlit run .\src\app.py
 ```
+
+## Evidencias de Execução
+
+****print da tela funcionando***
