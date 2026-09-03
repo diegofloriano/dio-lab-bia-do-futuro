@@ -115,4 +115,4 @@ Acesse a aplicação no navegador em `http://localhost:8501`.
 
 Desenvolvido por **Diego Floriano Costa**[cite: 1]  
 - **GitHub:** [@diegofloriano](https://github.com/diegofloriano) 
-- **LinkedIn:** [Diego Floriano](https://www.linkedin.com/in/diegoflorianocosta)
+- **LinkedIn:** [Diego Floriano](https://www.linkedin.com/in/diego-floriano)
