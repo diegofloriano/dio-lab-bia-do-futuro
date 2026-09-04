@@ -113,6 +113,6 @@ Acesse a aplicação no navegador em `http://localhost:8501`.
 
 ## 👤 Autor
 
-Desenvolvido por **Diego Floriano Costa**[cite: 1]  
+Desenvolvido por **Diego Floriano Costa**  
 - **GitHub:** [@diegofloriano](https://github.com/diegofloriano) 
 - **LinkedIn:** [Diego Floriano](https://www.linkedin.com/in/diego-floriano)
